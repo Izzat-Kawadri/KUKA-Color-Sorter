@@ -1,0 +1,312 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/KukaBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Roughcast.proto"
+
+WorldInfo {
+  info [
+    "Simulation of the KUKA youBot robot."
+    "This model includes an accurate and fast simulation of the Meccanum wheels."
+    "The robot can be equiped with various sensors (including the Microsoft Kinect) and configured with zero, one or two arms."
+  ]
+  title "KUKA youBot"
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        0, 2, 0
+      ]
+      frictionRotation -0.785398 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        0, 2, 0
+      ]
+      frictionRotation 0.785398 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.23588310508779103 -0.2729372758030064 -0.9326652155041356 3.676533704303827
+  position -0.12772409762331333 -1.2132227907900828 0.5106242478007085
+}
+KukaBox {
+  translation -2.61 6.37001 0.033346
+  name "blue"
+  color 0 0 1
+  size 4 2 0.1
+  physics Physics {
+    density 2700
+    mass 1
+  }
+}
+KukaBox {
+  translation 2.51 6.44 0.123346
+  rotation 2.4637270192518164e-10 2.504991788173733e-13 0.9999999999999999 2.4596098832568628e-08
+  name "yellow"
+  color 1 1 0
+  size 4 2 0.1
+  physics Physics {
+    density 2700
+    mass 1
+  }
+}
+KukaBox {
+  translation 2.42 3.78999 0.263346
+  rotation 5.30704480015827e-11 5.313128080882186e-11 -1 2.6746010685422747e-08
+  name "red"
+  color 1 0 0
+  size 4 2 0.1
+  physics Physics {
+    density 2700
+    mass 1
+  }
+}
+KukaBox {
+  translation -2.56996 3.58011 0.073346
+  rotation 3.453731259656114e-14 -9.504040466486906e-16 -1 2.6334655242595715e-05
+  name "green"
+  color 0 1 0
+  size 4 2 0.1
+  physics Physics {
+    density 2700
+    mass 1
+  }
+}
+KukaBox {
+  translation 2.44015 -3.68989 0.123346
+  rotation 3.453731259656114e-14 -9.504040466486906e-16 -1 2.6334655242595715e-05
+  name "board"
+  color 0 0 1
+  size 4 2 0.1
+  physics Physics {
+    density 2700
+    mass 1
+  }
+}
+KukaBox {
+  translation -2.44994 -0.52985 0.123346
+  rotation 3.453731259656114e-14 -9.504040466486906e-16 -1 2.6334655242595715e-05
+  name "board(1)"
+  color 0 1 0
+  size 4 2 0.1
+  physics Physics {
+    density 2700
+    mass 1
+  }
+}
+KukaBox {
+  translation -2.45989 -3.61985 0.123346
+  rotation 3.453731259656114e-14 -9.504040466486904e-16 -0.9999999999999999 2.6334648107183998e-05
+  name "board(2)"
+  color 1 0 0
+  size 4 2 0.1
+  physics Physics {
+    density 2700
+    mass 1
+  }
+}
+KukaBox {
+  translation 2.41018 -0.419956 0.123346
+  rotation 3.453731259656114e-14 -9.504040466486906e-16 -1 2.6334655242595715e-05
+  name "board(3)"
+  color 1 1 0
+  size 4 2 0.1
+  physics Physics {
+    density 2700
+    mass 1
+  }
+}
+KukaBox {
+  translation -0.0401401 8.86693 0.00423717
+  rotation 6.56576898872959e-14 3.382844126951309e-14 -1 0.00014384028268105235
+  name "Kuka red"
+  color 1 0 0
+  size 0.8 0.18 0.01
+}
+KukaBox {
+  translation -0.0802616 -6.01487 0.0134513
+  rotation 0.9999999806648053 -0.00017702233867853242 8.56357449672458e-05 0.05006253833351413
+  name "Kuka box(10)"
+  color 1 0 0
+  size 0.8 0.18 0.01
+}
+KukaBox {
+  translation -0.0445196 8.61603 0.00423717
+  rotation -1.2369638439240626e-12 -1.7946637587415597e-13 -1 6.722746830683869e-06
+  name "Kuka yellow"
+  color 1 1 0
+  size 0.8 0.18 0.01
+}
+KukaBox {
+  translation -0.076472 -5.74014 0.0045412
+  rotation -0.998031038197246 4.63507032031277e-06 0.06272197998663198 0.00010550927995795566
+  name "Kuka box(9)"
+  color 1 1 0
+  size 0.8 0.18 0.01
+}
+KukaBox {
+  translation -0.0434995 7.99767 0.00423717
+  rotation 1.1016695143779248e-14 3.250936730985348e-15 -1 0.0006704472351457022
+  name "Kuka green"
+  color 0 1 0
+  size 0.8 0.18 0.01
+}
+KukaBox {
+  translation -0.0453094 -5.22598 0.0219757
+  rotation -0.9999999931718947 8.596184874152293e-05 -7.916293907687205e-05 0.05019289836357335
+  name "Kuka box(12)"
+  color 0 1 0
+  size 0.8 0.18 0.01
+}
+KukaBox {
+  translation -0.0384618 8.31741 0.00423717
+  rotation 3.966297338861097e-14 -6.688503013567959e-15 -1 0.0002880589729852911
+  name "Kuka blue"
+  color 0 0 1
+  size 0.8 0.18 0.01
+}
+KukaBox {
+  translation -0.0720445 -5.5026 0.00321094
+  rotation 0.9964432793679736 -0.0317477330347503 -0.07805685395628423 6.98323978907335e-05
+  name "Kuka box(11)"
+  color 0 0 1
+  size 0.8 0.18 0.01
+}
+Shape {
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 10 30
+  tileSize 10 10
+  appearance Appearance {
+    texture ImageTexture {
+      url [
+        "../Untitled33.png"
+      ]
+    }
+  }
+}
+KukaBox {
+  translation 0.469413 -1.08258 0.242492
+  rotation 0.06233389106114955 -0.9961069079422917 0.062333891061150275 1.5746970067695023
+  name "Kuka box blue"
+  color 1 1 0
+}
+KukaBox {
+  translation 0.493777 -4.2912 0.342492
+  rotation 0 0 1 1.57469
+  name "Kuka box blue(2)"
+  color 0 0 1
+}
+Group {
+  children [
+    KukaBox {
+      translation 0.5 -4.1 0.4
+      rotation 1 0 0 4.6928e-06
+      name "Kuka box Blue"
+      color 0 0 1
+    }
+  ]
+}
+KukaBox {
+  translation -0.575329 -1.08569 0.192496
+  rotation 0 0 -1 1.57547
+  name "Kuka box blue(6)"
+  color 0 1 0
+}
+KukaBox {
+  translation 0.482654 -0.70808 0.412492
+  rotation 0.0623338910611509 -0.9961069079422917 0.062333891061149886 1.5746970067695023
+  name "Kuka box yellow"
+  color 1 1 0
+}
+KukaBox {
+  translation -0.529673 -4.28216 0.202492
+  rotation 0.06233339615734042 -0.9961069385931121 0.062333896157309596 1.5747
+  name "Kuka box red"
+  color 1 0 0
+}
+Wall {
+  translation 9.98 -4.01227e-05 0
+  rotation 0 0 1 3.14159
+  size 0.2 14 1.5
+  appearance Roughcast {
+    colorOverride 0.5 0.5 0.5
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 0.26 1.69002 0
+  rotation 0 0 1 1.5708
+  name "wall(1)"
+  size 0.1 10 0.48
+}
+Youbot {
+  translation 1.70444e-05 -6.68 0.15
+  rotation 0 0 1 1.5708
+  name "youBot(1)"
+  controller "my_controller_robot1"
+  bodySlot [
+    Emitter {
+      channel 1
+    }
+    DEF distance_sensor DistanceSensor {
+      translation 0.32 0 0
+      name "distance_sensor"
+    }
+    DEF camera2 Camera {
+      translation 0.20964 0 0.692918
+      rotation 0 1 0 1.0472
+      name "camera2"
+    }
+    DEF camera Camera {
+      translation 0.417294 0 0.0513917
+      rotation 0 1 0 1.8326
+    }
+  ]
+}
+Youbot {
+  translation -0.119983 9.51 0.15
+  rotation 0 0 1 -1.5707953071795862
+  name "youBot(2)"
+  controller "my_controller_robot2"
+  bodySlot [
+    Receiver {
+      channel 1
+    }
+    DEF distance_sensor DistanceSensor {
+      translation 0.32 0 0
+      name "distance_sensor"
+    }
+    DEF camera2 Camera {
+      translation 0.205038 0 0.685444
+      rotation 0 -1 0 -0.261795307179586
+      name "camera2"
+    }
+    DEF camera Camera {
+      translation 0.419882 0 0.0610508
+      rotation 0 1 0 1.8326
+    }
+  ]
+}

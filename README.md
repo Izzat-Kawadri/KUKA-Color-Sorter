@@ -78,7 +78,7 @@ It serves as a **foundation for collaborative robotics simulations** and will be
 KUKA-Color-Sorter/
 │
 ├── README.md                      # Project documentation
-├── world.wbt                      # Webots simulation world
+├── youbot.wbt                      # Webots simulation world
 ├── controllers/
 │ └── my_controller_robot1/
 │ ├── my_controller_robot1.py      # Main Python controller
@@ -88,7 +88,7 @@ KUKA-Color-Sorter/
 
 ## ⚙️ Setup Instructions
 1. Install [Webots](https://cyberbotics.com/).
-2. Open `world.wbt` in Webots.
+2. Open world file `youbot.wbt` in Webots.
 3. Click Run Simulation
 
 ---

@@ -102,7 +102,7 @@ You can watch a **demo video** of the current simulation in action:
 
 ## 📸 Screenshots
 
-![Screenshot](./images/Screenshot.mp4)
+![Screenshot](./images/screenshot.png)
 
 
 ## 🎯 Future Improvements
